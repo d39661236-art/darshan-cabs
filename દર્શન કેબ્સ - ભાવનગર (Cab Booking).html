@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="gu" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>દર્શન કેબ્સ - ભાવનગર | સુરક્ષિત અને આરામદાયક ટેક્સી સર્વિસ</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Noto Sans Gujarati & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+Gujarati:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans Gujarati"', 'Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#080d1a',
+                        },
+                        taxi: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-400 selection:text-navy-950">
+
+    <!-- Top Quick Contact Bar -->
+    <div class="bg-navy-950 text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-amber-400"></i>
+                <span>દેવરાજનગર, ભાવનગર, ગુજરાત | 24x7 કેબ સર્વિસ</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:+919601981199" class="hover:text-amber-400 transition flex items-center gap-1.5 font-medium">
+                    <i class="fa-solid fa-phone text-amber-400"></i> +91 96019 81199
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Header -->
+    <header class="sticky top-0 z-40 bg-navy-900/95 backdrop-blur-md text-white shadow-lg border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-amber-400 text-navy-950 flex items-center justify-center text-xl font-extrabold shadow-md group-hover:scale-105 transition">
+                    <i class="fa-solid fa-taxi"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg sm:text-xl font-extrabold tracking-tight leading-tight text-white">
+                        દર્શન કેબ્સ <span class="text-amber-400">- ભાવનગર</span>
+                    </h1>
+                    <p class="text-[11px] sm:text-xs text-slate-300 font-normal">Darshan Cabs & Travels</p>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-200">
+                <a href="#booking-section" class="hover:text-amber-400 transition">કેબ બુકિંગ</a>
+                <a href="#routes-section" class="hover:text-amber-400 transition">લોકપ્રિય રૂટ્સ</a>
+                <a href="#fleet-section" class="hover:text-amber-400 transition">અમારી ગાડીઓ</a>
+                <a href="#why-us-section" class="hover:text-amber-400 transition">વિશેષતાઓ</a>
+            </nav>
+
+            <!-- Quick Action Buttons -->
+            <div class="flex items-center gap-2 sm:gap-3">
+                <a href="tel:+919601981199" class="p-2.5 sm:px-4 sm:py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 border border-slate-700 text-sm font-semibold transition flex items-center gap-2" title="કોલ કરો">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="hidden sm:inline">કોલ કરો</span>
+                </a>
+                <a href="https://wa.me/919601981199?text=%E0%AA%A8%E0%AA%AE%E0%AA%B8%E0%AB%8D%E0%AA%A4%E0%AB%87%20%E0%AA%A6%E0%AA%B0%E0%AB%8D%E0%AA%B6%E0%AA%A8%20%E0%AA%95%E0%AB%87%E0%AA%AC%E0%AB%8D%E0%AA%B8,%20%E0%AA%AE%E0%AA%BE%E0%AA%B0%E0%AB%87%20%E0%AA%95%E0%AB%87%E0%AA%AC%20%E0%AA%AC%E0%AB%81%E0%AA%95%E0%AA%BF%E0%AA%82%E0%AA%97%20%E0%AA%B5%E0%AA%BF%E0%AA%B6%E0%AB%87%20%E0%AA%AE%E0%AA%BE%E0%AA%B9%E0%AA%BF%E0%AA%A4%E0%AB%80%20%E0%AA%9C%E0%AB%8B%E0%AA%88%E0%AA%8F%20%E0%AA%9B%E0%AB%87." target="_blank" rel="noopener noreferrer" class="p-2.5 sm:px-4 sm:py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold shadow-md transition flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span class="hidden sm:inline">WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero & Interactive Booking Section -->
+    <section id="booking-section" class="relative bg-gradient-to-br from-navy-950 via-navy-900 to-slate-900 text-white pt-8 pb-16 sm:pt-12 sm:pb-20 px-4 overflow-hidden">
+        <!-- Decorative Background Glow -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-amber-500/10 blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-blue-500/10 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center relative z-10">
+            
+            <!-- Left Hero Content -->
+            <div class="lg:col-span-5 text-center lg:text-left space-y-5">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/15 border border-amber-400/30 text-amber-300 text-xs sm:text-sm font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                    ભાવનગરની વિશ્વસનીય ટેક્સી સર્વિસ
+                </div>
+                
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+                    સુરક્ષિત, સમયસર અને <span class="text-amber-400">આરામદાયક</span> મુસાફરીનો વિશ્વાસ
+                </h2>
+                
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    ભાવનગરથી અમદાવાદ એરપોર્ટ, વડોદરા, સુરત, રાજકોટ, સોમનાથ, દ્વારકા કે દીવ જવા માટે સ્વચ્છ AC ગાડીઓ અને અનુભવી ડ્રાઈવર સાથે તરત જ કેબ બુક કરો.
+                </p>
+
+                <!-- Quick Trust Badges -->
+                <div class="grid grid-cols-3 gap-3 pt-2">
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-3 text-center">
+                        <div class="text-amber-400 text-lg font-bold">24x7</div>
+                        <div class="text-[11px] sm:text-xs text-slate-300 mt-0.5">સર્વિસ ઉપલબ્ધ</div>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-3 text-center">
+                        <div class="text-amber-400 text-lg font-bold">100%</div>
+                        <div class="text-[11px] sm:text-xs text-slate-300 mt-0.5">પારદર્શક ભાડું</div>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-3 text-center">
+                        <div class="text-amber-400 text-lg font-bold">AC</div>
+                        <div class="text-[11px] sm:text-xs text-slate-300 mt-0.5">સ્વચ્છ ગાડીઓ</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Interactive Booking Card -->
+            <div class="lg:col-span-7">
+                <div class="bg-white text-slate-800 rounded-3xl shadow-2xl p-5 sm:p-7 border border-slate-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg sm:text-xl font-bold text-navy-900 flex items-center gap-2">
+                            <i class="fa-solid fa-route text-amber-500"></i> ઓનલાઈન કેબ બુક કરો
+                        </h3>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200">
+                            ઇન્સ્ટન્ટ કન્ફર્મેશન
+                        </span>
+                    </div>
+
+                    <!-- Trip Type Tabs -->
+                    <div class="grid grid-cols-3 gap-1.5 bg-slate-100 p-1.5 rounded-2xl mb-5" role="tablist">
+                        <button type="button" onclick="selectTripType('વન-વે (One-Way)', this)" class="trip-tab active-tab py-2.5 px-2 rounded-xl text-xs sm:text-sm font-bold bg-navy-900 text-white shadow transition">
+                            વન-વે
+                        </button>
+                        <button type="button" onclick="selectTripType('રાઉન્ડ ટ્રિપ (Round Trip)', this)" class="trip-tab py-2.5 px-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-navy-900 transition">
+                            રાઉન્ડ ટ્રિપ
+                        </button>
+                        <button type="button" onclick="selectTripType('લોકલ / એરપોર્ટ', this)" class="trip-tab py-2.5 px-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-navy-900 transition">
+                            લોકલ / એરપોર્ટ
+                        </button>
+                    </div>
+
+                    <!-- Booking Form -->
+                    <form id="cabBookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-4">
+                        <input type="hidden" id="tripTypeInput" value="વન-વે (One-Way)">
+
+                        <!-- Pickup & Drop Row -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="pickupLocation" class="block text-xs font-bold text-slate-700 mb-1.5">
+                                    પિકઅપ સ્થળ (Pickup) <span class="text-red-500">*</span>
+                                </label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-emerald-600">
+                                        <i class="fa-solid fa-circle-dot"></i>
+                                    </span>
+                                    <input type="text" id="pickupLocation" value="ભાવનગર" placeholder="દા.ત. ભાવનગર" required
+                                        class="w-full pl-10 pr-3 py-3 rounded-xl border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none text-sm font-medium transition">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="dropLocation" class="block text-xs font-bold text-slate-700 mb-1.5">
+                                    ડ્રોપ સ્થળ (Drop) <span class="text-red-500">*</span>
+                                </label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-red-500">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </span>
+                                    <input type="text" id="dropLocation" list="popularDestinations" placeholder="દા.ત. અમદાવાદ એરપોર્ટ, દ્વારકા" required
+                                        class="w-full pl-10 pr-3 py-3 rounded-xl border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none text-sm font-medium transition">
+                                    <datalist id="popularDestinations">
+                                        <option value="અમદાવાદ એરપોર્ટ (AMD)">
+                                        <option value="અમદાવાદ શહેર">
+                                        <option value="વડોદરા">
+                                        <option value="સુરત">
+                                        <option value="રાજકોટ">
+                                        <option value="સોમનાથ - દ્વારકા - દીવ ટૂર">
+                                        <option value="સાળંગપુર હનુમાનજી મંદિર">
+                                    </datalist>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Date & Time Row -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="pickupDate" class="block text-xs font-bold text-slate-700 mb-1.5">
+                                    મુસાફરીની તારીખ <span class="text-red-500">*</span>
+                                </label>
+                                <input type="date" id="pickupDate" required
+                                    class="w-full px-3.5 py-3 rounded-xl border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none text-sm font-medium transition">
+                            </div>
+
+                            <div>
+                                <label for="pickupTime" class="block text-xs font-bold text-slate-700 mb-1.5">
+                                    પિકઅપ સમય <span class="text-red-500">*</span>
+                                </label>
+                                <input type="time" id="pickupTime" value="08:00" required
+                                    class="w-full px-3.5 py-3 rounded-xl border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none text-sm font-medium transition">
+                            </div>
+                        </div>
+
+                        <!-- Car Type Selector -->
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1.5">
+                                ગાડી પસંદ કરો (Car Type) <span class="text-red-500">*</span>
+                            </label>
+                            <div class="grid grid-cols-2 gap-3">
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="carType" value="Sedan (Aura / Dzire - 4+1 સીટર)" class="peer sr-only" checked>
+                                    <div class="p-3 rounded-xl border-2 border-slate-200 peer-checked:border-amber-500 peer-checked:bg-amber-50/70 text-center transition">
+                                        <i class="fa-solid fa-car text-navy-900 text-lg mb-1"></i>
+                                        <div class="text-xs sm:text-sm font-bold text-navy-900">Sedan (4 સીટર)</div>
+                                        <div class="text-[11px] text-slate-500">Aura / Dzire</div>
+                                    </div>
+                                </label>
+
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="carType" value="SUV (Ertiga / Innova Crysta - 6+1 / 7+1 સીટર)" class="peer sr-only">
+                                    <div class="p-3 rounded-xl border-2 border-slate-200 peer-checked:border-amber-500 peer-checked:bg-amber-50/70 text-center transition">
+                                        <i class="fa-solid fa-van-shuttle text-navy-900 text-lg mb-1"></i>
+                                        <div class="text-xs sm:text-sm font-bold text-navy-900">SUV (6-7 સીટર)</div>
+                                        <div class="text-[11px] text-slate-500">Ertiga / Innova</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Passenger Name & Mobile -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="passengerName" class="block text-xs font-bold text-slate-700 mb-1.5">
+                                    તમારું નામ <span class="text-red-500">*</span>
+                                </label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400">
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                    <input type="text" id="passengerName" placeholder="તમારું પૂરું નામ લખો" required
+                                        class="w-full pl-10 pr-3 py-3 rounded-xl border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none text-sm font-medium transition">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="passengerMobile" class="block text-xs font-bold text-slate-700 mb-1.5">
+                                    મોબાઈલ નંબર <span class="text-red-500">*</span>
+                                </label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400">
+                                        <i class="fa-solid fa-mobile-screen"></i>
+                                    </span>
+                                    <input type="tel" id="passengerMobile" placeholder="10 અંકનો મોબાઈલ નંબર" pattern="[0-9]{10}" maxlength="10" required
+                                        class="w-full pl-10 pr-3 py-3 rounded-xl border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none text-sm font-medium transition">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Validation Error Alert Box (Custom UI instead of alert) -->
+                        <div id="formErrorBox" class="hidden p-3 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs font-semibold flex items-center gap-2">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <span id="formErrorText">કૃપા કરીને બધી જરૂરી વિગતો યોગ્ય રીતે ભરો.</span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="w-full py-3.5 px-6 rounded-2xl bg-emerald-600 hover:bg-emerald-500 active:scale-[0.99] text-white font-bold text-base shadow-lg shadow-emerald-600/25 transition flex items-center justify-center gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>WhatsApp પર બુકિંગ મોકલો</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Routes & Fare Guide Section -->
+    <section id="routes-section" class="py-14 px-4 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-100 px-3 py-1 rounded-full">
+                લોકપ્રિય રૂટ્સ અને અંદાજિત ભાડું
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 mt-3">
+                ભાવનગરથી મુખ્ય શહેરો માટે કેબ સર્વિસ
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base mt-2">
+                નીચેના કોઈપણ રૂટ પર ક્લિક કરીને સીધું જ બુકિંગ ફોર્મ ભરો. ટોલ અને પાર્કિંગ ચાર્જ નિયમ મુજબ અલગ રહેશે.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <!-- Route 1 -->
+            <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-xl border border-slate-200/80 transition flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between text-xs font-semibold text-slate-500 mb-3">
+                        <span class="bg-blue-50 text-blue-700 px-2.5 py-1 rounded-lg">વન-વે / એરપોર્ટ ડ્રોપ</span>
+                        <span>~175 કિ.મી.</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy-900 group-hover:text-amber-600 transition">
+                        ભાવનગર <i class="fa-solid fa-arrow-right text-xs mx-1 text-slate-400"></i> અમદાવાદ
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-1">અમદાવાદ એરપોર્ટ (AMD) અથવા શહેર ડ્રોપ</p>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-baseline justify-between">
+                        <span class="text-xs text-slate-500">શરૂઆતી ભાડું:</span>
+                        <span class="text-lg font-extrabold text-navy-900">₹2,499*</span>
+                    </div>
+                </div>
+                <button type="button" onclick="quickBookRoute('અમદાવાદ એરપોર્ટ / શહેર', 'વન-વે (One-Way)')" class="mt-4 w-full py-2.5 rounded-xl bg-amber-400 hover:bg-amber-500 text-navy-950 font-bold text-sm transition flex items-center justify-center gap-1.5">
+                    <span>બુક કરો</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </button>
+            </div>
+
+            <!-- Route 2 -->
+            <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-xl border border-slate-200/80 transition flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between text-xs font-semibold text-slate-500 mb-3">
+                        <span class="bg-blue-50 text-blue-700 px-2.5 py-1 rounded-lg">વન-વે / રાઉન્ડ ટ્રિપ</span>
+                        <span>~205 કિ.મી.</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy-900 group-hover:text-amber-600 transition">
+                        ભાવનગર <i class="fa-solid fa-arrow-right text-xs mx-1 text-slate-400"></i> વડોદરા
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-1">વડોદરા એરપોર્ટ, રેલવે સ્ટેશન કે શહેર</p>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-baseline justify-between">
+                        <span class="text-xs text-slate-500">શરૂઆતી ભાડું:</span>
+                        <span class="text-lg font-extrabold text-navy-900">₹2,899*</span>
+                    </div>
+                </div>
+                <button type="button" onclick="quickBookRoute('વડોદરા', 'વન-વે (One-Way)')" class="mt-4 w-full py-2.5 rounded-xl bg-amber-400 hover:bg-amber-500 text-navy-950 font-bold text-sm transition flex items-center justify-center gap-1.5">
+                    <span>બુક કરો</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </button>
+            </div>
+
+            <!-- Route 3 -->
+            <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-xl border border-slate-200/80 transition flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between text-xs font-semibold text-slate-500 mb-3">
+                        <span class="bg-amber-50 text-amber-700 px-2.5 py-1 rounded-lg">યાત્રાધામ પેકેજ</span>
+                        <span>મલ્ટી-ડે ટૂર</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy-900 group-hover:text-amber-600 transition">
+                        સોમનાથ - દ્વારકા - દીવ
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-1">ભાવનગરથી સૌરાષ્ટ્ર દર્શન ફેમિલી ટૂર</p>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-baseline justify-between">
+                        <span class="text-xs text-slate-500">પ્રતિ કિ.મી. દર:</span>
+                        <span class="text-lg font-extrabold text-navy-900">₹12 / કિ.મી.*</span>
+                    </div>
+                </div>
+                <button type="button" onclick="quickBookRoute('સોમનાથ - દ્વારકા - દીવ ટૂર', 'રાઉન્ડ ટ્રિપ (Round Trip)')" class="mt-4 w-full py-2.5 rounded-xl bg-amber-400 hover:bg-amber-500 text-navy-950 font-bold text-sm transition flex items-center justify-center gap-1.5">
+                    <span>બુક કરો</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </button>
+            </div>
+
+            <!-- Route 4 -->
+            <div class="bg-white rounded-2xl p-5 shadow-sm hover:shadow-xl border border-slate-200/80 transition flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between text-xs font-semibold text-slate-500 mb-3">
+                        <span class="bg-blue-50 text-blue-700 px-2.5 py-1 rounded-lg">વન-વે / ઇન્ટરસિટી</span>
+                        <span>~175 / 365 કિ.મી.</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy-900 group-hover:text-amber-600 transition">
+                        રાજકોટ / સુરત ડ્રોપ
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-1">હિરાસર એરપોર્ટ (રાજકોટ) અથવા સુરત</p>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-baseline justify-between">
+                        <span class="text-xs text-slate-500">શરૂઆતી ભાડું:</span>
+                        <span class="text-lg font-extrabold text-navy-900">₹2,499*</span>
+                    </div>
+                </div>
+                <button type="button" onclick="quickBookRoute('રાજકોટ / સુરત', 'વન-વે (One-Way)')" class="mt-4 w-full py-2.5 rounded-xl bg-amber-400 hover:bg-amber-500 text-navy-950 font-bold text-sm transition flex items-center justify-center gap-1.5">
+                    <span>બુક કરો</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Showcase Section -->
+    <section id="fleet-section" class="bg-slate-100 py-14 px-4 border-y border-slate-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-bold uppercase tracking-wider text-navy-900 bg-amber-400 px-3 py-1 rounded-full">
+                    અમારી ગાડીઓ (Our Fleet)
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 mt-3">
+                    તમારી જરૂરિયાત મુજબ આરામદાયક ગાડી પસંદ કરો
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-2">
+                    દરેક ગાડી નિયમિત સર્વિસ થયેલી, સ્વચ્છ, સેનિટાઈઝ્ડ અને ફુલ AC સુવિધા સાથે ઉપલબ્ધ છે.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <!-- Sedan Card -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-slate-200/80 flex flex-col">
+                    <div class="bg-gradient-to-r from-navy-900 to-slate-800 p-6 text-white text-center relative">
+                        <span class="absolute top-3 right-3 bg-amber-400 text-navy-950 text-[11px] font-extrabold px-2.5 py-0.5 rounded-full">
+                            સૌથી વધુ લોકપ્રિય
+                        </span>
+                        <div class="w-16 h-16 mx-auto bg-white/10 rounded-2xl flex items-center justify-center text-3xl text-amber-400 mb-3">
+                            <i class="fa-solid fa-car-side"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Sedan (સેડાન)</h3>
+                        <p class="text-xs text-slate-300 mt-1">Hyundai Aura / Maruti Dzire</p>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <ul class="space-y-2.5 text-sm text-slate-700">
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-users text-amber-500 w-5"></i>
+                                <span><strong>4 + 1 સીટર</strong> (નાના પરિવાર માટે ઉત્તમ)</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-snowflake text-amber-500 w-5"></i>
+                                <span>પાવરફુલ AC અને આરામદાયક સીટ</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-suitcase-rolling text-amber-500 w-5"></i>
+                                <span>2-3 બેગ માટે પૂરતી લગેજ સ્પેસ</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-shield-halved text-emerald-600 w-5"></i>
+                                <span>અનુભવી અને વિનમ્ર ડ્રાઈવર</span>
+                            </li>
+                        </ul>
+                        <button type="button" onclick="selectCarAndScroll('Sedan (Aura / Dzire - 4+1 સીટર)')" class="w-full py-2.5 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-semibold text-sm transition">
+                            Sedan બુક કરો
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SUV Card -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-slate-200/80 flex flex-col">
+                    <div class="bg-gradient-to-r from-navy-900 to-slate-800 p-6 text-white text-center relative">
+                        <span class="absolute top-3 right-3 bg-emerald-400 text-navy-950 text-[11px] font-extrabold px-2.5 py-0.5 rounded-full">
+                            ફેમિલી ટૂર માટે બેસ્ટ
+                        </span>
+                        <div class="w-16 h-16 mx-auto bg-white/10 rounded-2xl flex items-center justify-center text-3xl text-amber-400 mb-3">
+                            <i class="fa-solid fa-van-shuttle"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">SUV (એસયુવી)</h3>
+                        <p class="text-xs text-slate-300 mt-1">Maruti Ertiga / Toyota Innova Crysta</p>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <ul class="space-y-2.5 text-sm text-slate-700">
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-users text-amber-500 w-5"></i>
+                                <span><strong>6 + 1 / 7 + 1 સીટર</strong> (મોટા પરિવાર માટે)</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-snowflake text-amber-500 w-5"></i>
+                                <span>ડ્યુઅલ AC વેન્ટ્સ અને વધુ લેગરૂમ</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-suitcase-rolling text-amber-500 w-5"></i>
+                                <span>લાંબી મુસાફરી અને યાત્રાધામ ટૂર માટે શ્રેષ્ઠ</span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-shield-halved text-emerald-600 w-5"></i>
+                                <span>સ્વચ્છ અને સેનિટાઈઝ્ડ ઇન્ટિરિયર</span>
+                            </li>
+                        </ul>
+                        <button type="button" onclick="selectCarAndScroll('SUV (Ertiga / Innova Crysta - 6+1 / 7+1 સીટર)')" class="w-full py-2.5 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-semibold text-sm transition">
+                            SUV બુક કરો
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us-section" class="py-14 px-4 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900">
+                શા માટે દર્શન કેબ્સ પસંદ કરવી?
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base mt-2">
+                અમે મુસાફરોની સુરક્ષા, સમયપાલન અને આરામને હંમેશા પ્રથમ પ્રાધાન્ય આપીએ છીએ.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm text-center">
+                <div class="w-12 h-12 mx-auto rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <h3 class="font-bold text-navy-900 text-base">24/7 ઉપલબ્ધતા</h3>
+                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                    વહેલી સવારની ફ્લાઈટ હોય કે મોડી રાતની ટ્રેન, અમારી કેબ હંમેશા સમયસર હાજર રહે છે.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm text-center">
+                <div class="w-12 h-12 mx-auto rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                </div>
+                <h3 class="font-bold text-navy-900 text-base">પારદર્શક ભાડું</h3>
+                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                    કોઈ છુપો ચાર્જ નહીં. બુકિંગ સમયે નક્કી થયેલું વ્યાજબી અને સ્પષ્ટ ભાડું જ લેવામાં આવે છે.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm text-center">
+                <div class="w-12 h-12 mx-auto rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-id-card"></i>
+                </div>
+                <h3 class="font-bold text-navy-900 text-base">અનુભવી ડ્રાઈવર</h3>
+                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                    ગુજરાતના તમામ હાઈવે અને રૂટ્સના જાણકાર, લાયસન્સ ધરાવતા અને વિનમ્ર ડ્રાઈવરો.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm text-center">
+                <div class="w-12 h-12 mx-auto rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-sparkles"></i>
+                </div>
+                <h3 class="font-bold text-navy-900 text-base">સ્વચ્છ અને AC ગાડી</h3>
+                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                    દરેક ટ્રિપ પહેલા ગાડીની સંપૂર્ણ સફાઈ અને ચેકિંગ કરવામાં આવે છે જેથી મુસાફરી સુખદ બને.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-slate-300 pt-12 pb-20 sm:pb-12 px-4 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-slate-800">
+            <!-- About -->
+            <div>
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 rounded-xl bg-amber-400 text-navy-950 flex items-center justify-center text-lg font-extrabold">
+                        <i class="fa-solid fa-taxi"></i>
+                    </div>
+                    <h3 class="text-lg font-extrabold text-white">દર્શન કેબ્સ - ભાવનગર</h3>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                    ભાવનગર અને સમગ્ર ગુજરાતમાં વન-વે, રાઉન્ડ ટ્રિપ, એરપોર્ટ ટ્રાન્સફર અને ફેમિલી ટૂર માટે વિશ્વસનીય કોમર્શિયલ કેબ સર્વિસ.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">ઝડપી લિંક્સ</h4>
+                <ul class="space-y-2 text-xs sm:text-sm">
+                    <li><a href="#booking-section" class="hover:text-amber-400 transition">ઓનલાઈન કેબ બુકિંગ</a></li>
+                    <li><a href="#routes-section" class="hover:text-amber-400 transition">ભાવનગર થી અમદાવાદ કેબ</a></li>
+                    <li><a href="#routes-section" class="hover:text-amber-400 transition">સોમનાથ - દ્વારકા ટૂર પેકેજ</a></li>
+                    <li><a href="#fleet-section" class="hover:text-amber-400 transition">અમારી ગાડીઓ (Sedan / SUV)</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">સંપર્ક વિગતો</h4>
+                <ul class="space-y-2.5 text-xs sm:text-sm">
+                    <li class="flex items-start gap-2.5">
+                        <i class="fa-solid fa-location-dot text-amber-400 mt-1"></i>
+                        <span>દેવરાજનગર, ભાવનગર, ગુજરાત - 364001</span>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <i class="fa-solid fa-phone text-amber-400"></i>
+                        <a href="tel:+919601981199" class="hover:text-amber-400 transition font-semibold">+91 96019 81199</a>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+                        <a href="https://wa.me/919601981199" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition">WhatsApp પર મેસેજ કરો</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto pt-6 text-center text-xs text-slate-500">
+            &copy; 2026 દર્શન કેબ્સ - ભાવનગર (Darshan Cabs). સર્વ હક્ક સ્વાધીન.
+        </div>
+    </footer>
+
+    <!-- Mobile Fixed Bottom Quick Bar -->
+    <div class="fixed bottom-0 inset-x-0 z-40 sm:hidden bg-navy-900 border-t border-slate-700 p-2.5 grid grid-cols-2 gap-2.5 shadow-2xl">
+        <a href="tel:+919601981199" class="py-2.5 px-3 rounded-xl bg-amber-400 text-navy-950 font-bold text-sm flex items-center justify-center gap-2">
+            <i class="fa-solid fa-phone"></i> કોલ કરો
+        </a>
+        <a href="https://wa.me/919601981199" target="_blank" rel="noopener noreferrer" class="py-2.5 px-3 rounded-xl bg-emerald-600 text-white font-bold text-sm flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+        </a>
+    </div>
+
+    <!-- Instant Booking Confirmation Summary Modal -->
+    <div id="confirmationModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-navy-950/80 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border border-slate-100 animate-[fadeIn_0.2s_ease-out]">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-extrabold text-navy-900 text-base sm:text-lg">બુકિંગ વિગતો તૈયાર છે!</h3>
+                        <p class="text-xs text-slate-500">દર્શન કેબ્સ - ભાવનગર</p>
+                    </div>
+                </div>
+                <button type="button" onclick="closeConfirmationModal()" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Booking Summary Content -->
+            <div id="bookingSummaryDetails" class="my-4 bg-slate-50 rounded-2xl p-4 space-y-2 text-xs sm:text-sm border border-slate-200/80">
+                <!-- Populated dynamically via JS -->
+            </div>
+
+            <p class="text-xs text-slate-600 mb-4 text-center">
+                નીચેના બટન પર ક્લિક કરીને તમારી બુકિંગ વિગતો સીધી <strong>WhatsApp</strong> પર મોકલો. અમારી ટીમ તરત જ તમારો સંપર્ક કરશે.
+            </p>
+
+            <div class="space-y-2.5">
+                <a id="whatsappDirectLink" href="#" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base shadow-lg shadow-emerald-600/25 transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>WhatsApp પર મોકલો</span>
+                </a>
+                <button type="button" onclick="closeConfirmationModal()" class="w-full py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs sm:text-sm transition">
+                    વિગતોમાં ફેરફાર કરો
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Set Agency WhatsApp Number
+        const AGENCY_WHATSAPP_NUMBER = "919601981199";
+
+        // Initialize Default Date to Today
+        window.addEventListener('DOMContentLoaded', () => {
+            const dateInput = document.getElementById('pickupDate');
+            if (dateInput) {
+                const today = new Date().toISOString().split('T')[0];
+                dateInput.value = today;
+                dateInput.min = today;
+            }
+        });
+
+        // Handle Trip Type Tab Selection
+        function selectTripType(typeValue, btnElement) {
+            document.getElementById('tripTypeInput').value = typeValue;
+            
+            const tabs = document.querySelectorAll('.trip-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('bg-navy-900', 'text-white', 'shadow', 'font-bold');
+                tab.classList.add('text-slate-600', 'font-semibold');
+            });
+
+            if (btnElement) {
+                btnElement.classList.remove('text-slate-600', 'font-semibold');
+                btnElement.classList.add('bg-navy-900', 'text-white', 'shadow', 'font-bold');
+            }
+        }
+
+        // Auto-fill Form from Popular Route Cards
+        function quickBookRoute(dropCity, tripType) {
+            document.getElementById('pickupLocation').value = 'ભાવનગર';
+            document.getElementById('dropLocation').value = dropCity;
+            
+            // Update Trip Type tab visually
+            const tabs = document.querySelectorAll('.trip-tab');
+            tabs.forEach(tab => {
+                if (tripType.includes(tab.innerText.trim())) {
+                    selectTripType(tripType, tab);
+                }
+            });
+
+            // Smooth scroll to booking form and focus on date/name
+            const bookingSection = document.getElementById('booking-section');
+            bookingSection.scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => {
+                document.getElementById('passengerName').focus();
+            }, 600);
+        }
+
+        // Select Car from Fleet Section & Scroll to Form
+        function selectCarAndScroll(carValue) {
+            const radios = document.querySelectorAll('input[name="carType"]');
+            radios.forEach(radio => {
+                if (radio.value === carValue) {
+                    radio.checked = true;
+                }
+            });
+            document.getElementById('booking-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Format Date from YYYY-MM-DD to DD-MM-YYYY
+        function formatDisplayDate(isoDate) {
+            if (!isoDate) return '';
+            const parts = isoDate.split('-');
+            if (parts.length !== 3) return isoDate;
+            return `${parts[2]}-${parts[1]}-${parts[0]}`;
+        }
+
+        // Handle Booking Form Submission
+        function handleBookingSubmit(event) {
+            event.preventDefault();
+
+            const errorBox = document.getElementById('formErrorBox');
+            const errorText = document.getElementById('formErrorText');
+            errorBox.classList.add('hidden');
+
+            const tripType = document.getElementById('tripTypeInput').value;
+            const pickup = document.getElementById('pickupLocation').value.trim();
+            const drop = document.getElementById('dropLocation').value.trim();
+            const dateRaw = document.getElementById('pickupDate').value;
+            const time = document.getElementById('pickupTime').value;
+            const carRadio = document.querySelector('input[name="carType"]:checked');
+            const carType = carRadio ? carRadio.value : 'Sedan';
+            const name = document.getElementById('passengerName').value.trim();
+            const mobile = document.getElementById('passengerMobile').value.trim();
+
+            // Validation checks
+            if (!pickup || !drop || !dateRaw || !time || !name) {
+                errorText.textContent = 'કૃપા કરીને બધી જરૂરી વિગતો ભરો.';
+                errorBox.classList.remove('hidden');
+                return;
+            }
+
+            if (!/^[0-9]{10}$/.test(mobile)) {
+                errorText.textContent = 'કૃપા કરીને સાચો 10 અંકનો મોબાઈલ નંબર દાખલ કરો.';
+                errorBox.classList.remove('hidden');
+                document.getElementById('passengerMobile').focus();
+                return;
+            }
+
+            const formattedDate = formatDisplayDate(dateRaw);
+
+            // Populate Confirmation Modal UI
+            const summaryContainer = document.getElementById('bookingSummaryDetails');
+            summaryContainer.innerHTML = `
+                <div class="flex justify-between"><span class="text-slate-500">ટ્રિપ પ્રકાર:</span> <strong class="text-navy-900">${tripType}</strong></div>
+                <div class="flex justify-between"><span class="text-slate-500">પિકઅપ સ્થળ:</span> <strong class="text-navy-900">${pickup}</strong></div>
+                <div class="flex justify-between"><span class="text-slate-500">ડ્રોપ સ્થળ:</span> <strong class="text-navy-900">${drop}</strong></div>
+                <div class="flex justify-between"><span class="text-slate-500">તારીખ અને સમય:</span> <strong class="text-navy-900">${formattedDate} | ${time}</strong></div>
+                <div class="flex justify-between"><span class="text-slate-500">પસંદ કરેલ ગાડી:</span> <strong class="text-navy-900 text-right">${carType}</strong></div>
+                <div class="border-t border-slate-200 my-1 pt-1 flex justify-between"><span class="text-slate-500">મુસાફરનું નામ:</span> <strong class="text-navy-900">${name}</strong></div>
+                <div class="flex justify-between"><span class="text-slate-500">મોબાઈલ નંબર:</span> <strong class="text-navy-900">+91 ${mobile}</strong></div>
+            `;
+
+            // Construct Pre-filled Gujarati WhatsApp Message
+            const whatsappMessage = 
+`*નમસ્તે દર્શન કેબ્સ - ભાવનગર* 🚖
+મારે નીચે મુજબ કેબ બુક કરવી છે:
+
+• *ટ્રિપ પ્રકાર:* ${tripType}
+• *પિકઅપ સ્થળ:* ${pickup}
+• *ડ્રોપ સ્થળ:* ${drop}
+• *તારીખ:* ${formattedDate}
+• *સમય:* ${time}
+• *ગાડી:* ${carType}
+• *નામ:* ${name}
+• *મોબાઈલ:* +91 ${mobile}
+
+કૃપા કરીને ભાડું અને ઉપલબ્ધતા જણાવશો.`;
+
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappUrl = `https://wa.me/${AGENCY_WHATSAPP_NUMBER}?text=${encodedMessage}`;
+
+            const whatsappLinkBtn = document.getElementById('whatsappDirectLink');
+            whatsappLinkBtn.href = whatsappUrl;
+
+            // Show Modal
+            const modal = document.getElementById('confirmationModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeConfirmationModal() {
+            const modal = document.getElementById('confirmationModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+    </script>
+</body>
+</html>
